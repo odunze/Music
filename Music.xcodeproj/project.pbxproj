@@ -16,7 +16,7 @@
 		4CECA612223064B200EF7BAD /* SongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA611223064B200EF7BAD /* SongController.m */; };
 		4CECA615223064C400EF7BAD /* SongImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA614223064C400EF7BAD /* SongImporter.m */; };
 		4CECA618223064E100EF7BAD /* SongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA617223064E100EF7BAD /* SongViewController.m */; };
-		4CECA61B2230650200EF7BAD /* SongListViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA61A2230650200EF7BAD /* SongListViewTableViewController.m */; };
+		4CECA61B2230650200EF7BAD /* SongListTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA61A2230650200EF7BAD /* SongListTableController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		4CECA614223064C400EF7BAD /* SongImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongImporter.m; sourceTree = "<group>"; };
 		4CECA616223064E100EF7BAD /* SongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongViewController.h; sourceTree = "<group>"; };
 		4CECA617223064E100EF7BAD /* SongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongViewController.m; sourceTree = "<group>"; };
-		4CECA6192230650200EF7BAD /* SongListViewTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListViewTableViewController.h; sourceTree = "<group>"; };
-		4CECA61A2230650200EF7BAD /* SongListViewTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListViewTableViewController.m; sourceTree = "<group>"; };
+		4CECA6192230650200EF7BAD /* SongListTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListTableController.h; sourceTree = "<group>"; };
+		4CECA61A2230650200EF7BAD /* SongListTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListTableController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 			children = (
 				4CECA616223064E100EF7BAD /* SongViewController.h */,
 				4CECA617223064E100EF7BAD /* SongViewController.m */,
-				4CECA6192230650200EF7BAD /* SongListViewTableViewController.h */,
-				4CECA61A2230650200EF7BAD /* SongListViewTableViewController.m */,
+				4CECA6192230650200EF7BAD /* SongListTableController.h */,
+				4CECA61A2230650200EF7BAD /* SongListTableController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			files = (
 				4CECA615223064C400EF7BAD /* SongImporter.m in Sources */,
 				4CECA60F223064A200EF7BAD /* Song.m in Sources */,
-				4CECA61B2230650200EF7BAD /* SongListViewTableViewController.m in Sources */,
+				4CECA61B2230650200EF7BAD /* SongListTableController.m in Sources */,
 				4CECA618223064E100EF7BAD /* SongViewController.m in Sources */,
 				4CECA607223063D100EF7BAD /* main.m in Sources */,
 				4CECA5F9223063CF00EF7BAD /* AppDelegate.m in Sources */,
