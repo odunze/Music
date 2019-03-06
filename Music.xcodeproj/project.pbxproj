@@ -8,24 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		4CECA5F9223063CF00EF7BAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA5F8223063CF00EF7BAD /* AppDelegate.m */; };
-		4CECA5FC223063CF00EF7BAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA5FB223063CF00EF7BAD /* ViewController.m */; };
 		4CECA5FF223063CF00EF7BAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CECA5FD223063CF00EF7BAD /* Main.storyboard */; };
 		4CECA601223063D100EF7BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CECA600223063D100EF7BAD /* Assets.xcassets */; };
 		4CECA604223063D100EF7BAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CECA602223063D100EF7BAD /* LaunchScreen.storyboard */; };
 		4CECA607223063D100EF7BAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA606223063D100EF7BAD /* main.m */; };
+		4CECA60F223064A200EF7BAD /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA60E223064A200EF7BAD /* Song.m */; };
+		4CECA612223064B200EF7BAD /* SongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA611223064B200EF7BAD /* SongController.m */; };
+		4CECA615223064C400EF7BAD /* SongImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA614223064C400EF7BAD /* SongImporter.m */; };
+		4CECA618223064E100EF7BAD /* SongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA617223064E100EF7BAD /* SongViewController.m */; };
+		4CECA61B2230650200EF7BAD /* SongListViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CECA61A2230650200EF7BAD /* SongListViewTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CECA5F4223063CF00EF7BAD /* Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CECA5F7223063CF00EF7BAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CECA5F8223063CF00EF7BAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4CECA5FA223063CF00EF7BAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CECA5FB223063CF00EF7BAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4CECA5FE223063CF00EF7BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CECA600223063D100EF7BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CECA603223063D100EF7BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CECA605223063D100EF7BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CECA606223063D100EF7BAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CECA60D223064A200EF7BAD /* Song.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		4CECA60E223064A200EF7BAD /* Song.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		4CECA610223064B200EF7BAD /* SongController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongController.h; sourceTree = "<group>"; };
+		4CECA611223064B200EF7BAD /* SongController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongController.m; sourceTree = "<group>"; };
+		4CECA613223064C400EF7BAD /* SongImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongImporter.h; sourceTree = "<group>"; };
+		4CECA614223064C400EF7BAD /* SongImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongImporter.m; sourceTree = "<group>"; };
+		4CECA616223064E100EF7BAD /* SongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongViewController.h; sourceTree = "<group>"; };
+		4CECA617223064E100EF7BAD /* SongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongViewController.m; sourceTree = "<group>"; };
+		4CECA6192230650200EF7BAD /* SongListViewTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongListViewTableViewController.h; sourceTree = "<group>"; };
+		4CECA61A2230650200EF7BAD /* SongListViewTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SongListViewTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +72,55 @@
 			children = (
 				4CECA5F7223063CF00EF7BAD /* AppDelegate.h */,
 				4CECA5F8223063CF00EF7BAD /* AppDelegate.m */,
-				4CECA5FA223063CF00EF7BAD /* ViewController.h */,
-				4CECA5FB223063CF00EF7BAD /* ViewController.m */,
-				4CECA5FD223063CF00EF7BAD /* Main.storyboard */,
+				4CECA61E2230655500EF7BAD /* Model */,
+				4CECA61C2230651E00EF7BAD /* Model Controllers */,
+				4CECA61D2230653600EF7BAD /* View Controllers */,
+				4CECA61F2230656E00EF7BAD /* Storyboards */,
 				4CECA600223063D100EF7BAD /* Assets.xcassets */,
-				4CECA602223063D100EF7BAD /* LaunchScreen.storyboard */,
 				4CECA605223063D100EF7BAD /* Info.plist */,
 				4CECA606223063D100EF7BAD /* main.m */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		4CECA61C2230651E00EF7BAD /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CECA610223064B200EF7BAD /* SongController.h */,
+				4CECA611223064B200EF7BAD /* SongController.m */,
+				4CECA613223064C400EF7BAD /* SongImporter.h */,
+				4CECA614223064C400EF7BAD /* SongImporter.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		4CECA61D2230653600EF7BAD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CECA616223064E100EF7BAD /* SongViewController.h */,
+				4CECA617223064E100EF7BAD /* SongViewController.m */,
+				4CECA6192230650200EF7BAD /* SongListViewTableViewController.h */,
+				4CECA61A2230650200EF7BAD /* SongListViewTableViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4CECA61E2230655500EF7BAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CECA60D223064A200EF7BAD /* Song.h */,
+				4CECA60E223064A200EF7BAD /* Song.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CECA61F2230656E00EF7BAD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4CECA5FD223063CF00EF7BAD /* Main.storyboard */,
+				4CECA602223063D100EF7BAD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CECA5FC223063CF00EF7BAD /* ViewController.m in Sources */,
+				4CECA615223064C400EF7BAD /* SongImporter.m in Sources */,
+				4CECA60F223064A200EF7BAD /* Song.m in Sources */,
+				4CECA61B2230650200EF7BAD /* SongListViewTableViewController.m in Sources */,
+				4CECA618223064E100EF7BAD /* SongViewController.m in Sources */,
 				4CECA607223063D100EF7BAD /* main.m in Sources */,
 				4CECA5F9223063CF00EF7BAD /* AppDelegate.m in Sources */,
+				4CECA612223064B200EF7BAD /* SongController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
