@@ -7,10 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Song.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SongImporter : NSObject
+
+- (instancetype)initFromDictionary:(NSDictionary *)dictionary songTitle:(NSString *)title artistName:(NSString *)artistName lyrics:(NSString *)lyrics rating:(NSInteger)rating;
+- (instancetype)initFromPlistDictionary:(NSDictionary *)dictionary;
+
+@property (nonatomic,readonly) NSDictionary *songAsDictionary;
 
 @end
 

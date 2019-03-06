@@ -8,6 +8,7 @@
 
 #import "SongController.h"
 #import "Song.h"
+#import "SongImporter.h"
 
 @implementation SongController
 
