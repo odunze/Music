@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SongViewController : UIViewController
 
-@property SHSongController *songController;
-@property SHSong *song;
+@property SongController *songController;
+@property Song *song;
 
 -(void) updateViews;
 

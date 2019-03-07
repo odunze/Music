@@ -1,5 +1,5 @@
 //
-//  SongListTableViewController.h
+//  SongListController.h
 //  Music
 //
 //  Created by Lotanna Igwe-Odunze on 3/6/19.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SongListTableController : UITableViewController
+@interface SongListController : UITableViewController
 
 @end
 

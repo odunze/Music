@@ -10,16 +10,12 @@
 #import "Song.h"
 #import "SongImporter.h"
 
-@implementation SongController
+@implementation SongController {
 
-@property (nonatomic, copy) NSMutableArray *internalSongs;
+    @property (nonatomic, copy) NSMutableArray *internalSongs;
+}
 
-@end
-
-@implementation SHSongController
-
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         _internalSongs = [@[] mutableCopy];
@@ -27,6 +23,8 @@
     }
     return self;
 }
+
+
 
 - (void)createSongWithTitle:(NSString *)title artist:(NSString *)artist lyrics:(NSString *)lyrics rating:(NSInteger)rating
 {
@@ -42,7 +40,7 @@
     
     NSMutableArray *songDictionaries = [[NSMutableArray alloc] init];
     
-    for(SHSong *internalSong in self.internalSongs) {
+    for(Song *internalSong in self.internalSongs) {
         NSDictionary *songDictionary = @{@"title": internalSong.title,
                                          @"artist": internalSong.artist,
                                          @"lyrics": internalSong.lyrics,
@@ -67,15 +65,15 @@
     NSArray *songDictionaries = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     
     for(NSDictionary *songDictionary in songDictionaries) {
-        SHSong *song = [[SHSong alloc] initWithDictionary: songDictionary];
+        Song *song = [[Song alloc] initWithDictionary: songDictionary];
         [self.internalSongs addObject:song];
     }
 }
 
-- (void)updateSongWithSong:(SHSong *)song title:(NSString *)title artist:(NSString *)artist lyrics:(NSString *)lyrics rating:(NSInteger)rating
+- (void)updateSongWithSong:(Song *)song title:(NSString *)title artist:(NSString *)artist lyrics:(NSString *)lyrics rating:(NSInteger)rating
 {
     unsigned long index = [self.internalSongs indexOfObject:song];
-    SHSong *existingSong = self.internalSongs[index];
+    Song *existingSong = self.internalSongs[index];
     [existingSong setTitle: title];
     [existingSong setArtist: artist];
     [existingSong setLyrics: lyrics];
@@ -124,7 +122,7 @@
     }] resume];
 }
 
-- (void)changeRatingOfSong:(SHSong *)song rating:(NSInteger)rating
+- (void)changeRatingOfSong:(Song *)song rating:(NSInteger)rating
 {
     song.rating = rating;
 }
@@ -135,21 +133,6 @@
 
 static NSString * const baseURLString = @"https://musixmatchcom-musixmatch.p.mashape.com/wsr/1.1/matcher.lyrics.get";
 static NSString * const APIKey = @"PJqtq9cUrumshDECZcaVAnGsycRcp15ejX3jsn2HtbcCWVeLRX";
-
-static NSString * const testJSON = @" \
-{ \
-\"lyrics_id\": 7650688, \
-\"restricted\": false, \
-\"instrumental\": false, \
-\"lyrics_body\": \"Thought I'd end up with Sean\\nBut he wasn't a match\\nWrote some songs about Ricky\\nNow I listen and laugh\\nEven almost got married\\nAnd for Pete I'm so thankful\\nWish I could say thank you to Malcolm\\n'Cause he was an angel\\n\\nOne taught me love\\nOne taught me patience\\nAnd one taught me pain\\nNow I'm so amazin'\\nSay I've loved and I've lost\\nBut that's not what I see\\nLook what I've got\\nLook what you taught me\\nAnd for that I say\\n\\nThank you, next (next)\\nThank you, next (next)\\nThank you, next\\nI'm so, I'm so grateful for my ex\\nThank you, next (next)\\nThank you, next (next),\\nThank you, next\\nI'm so, I'm so grateful\", \
-\"lyrics_language\": \"en\", \
-\"script_tracking_url\": \"http://tracking.musixmatch.com/t1.0/GR6Q97jE/\", \
-\"pixel_tracking_url\": \"http://tracking.musixmatch.com/t1.0/O+uCbCYZ50IP8zibMOqQz2+cq5dy1Pz9nQVd8BZap1EL6+OfjEXUlyasewf3QW7gBY4/5kyfynZFKchgk6p7KP3dGlgHfbwCrWLHvIGxH98ZBN74uBTD8ww1/\", \
-\"html_tracking_url\": \"http://tracking.musixmatch.com/t1.0/mzoCLtOg7U2B2B6ROdSvu+HvAFuzkE0/cTF/\", \
-\"lyrics_copyright\": \"Lyrics powered by www.musiXmatch.com. This Lyrics is NOT for Commercial use and only 30% of the lyrics are returned.\", \
-\"updated_time\": \"2012-08-24T10:15:05Z\" \
-} \
-";
 
 
 @end

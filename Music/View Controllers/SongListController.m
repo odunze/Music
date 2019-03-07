@@ -1,17 +1,17 @@
 //
-//  SongListTableViewController.m
+//  SongListController.m
 //  Music
 //
 //  Created by Lotanna Igwe-Odunze on 3/6/19.
 //  Copyright © 2019 Lotanna Igwe-Odunze. All rights reserved.
 //
 
-#import "SongListTableController.h"
+#import "SongListController.h"
 #import "SongController.h"
 #import "Song.h"
 #import "SongViewController.h"
 
-@interface SongListTableController ()
+@interface SongListController ()
 
 @property (nonatomic) SongController *songController;
 
@@ -23,7 +23,7 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        _songController = [[SHSongController alloc] init];
+        _songController = [[SongController alloc] init];
     }
     return self;
 }
@@ -32,7 +32,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _songController = [[SHSongController alloc] init];
+        _songController = [[SongController alloc] init];
     }
     return self;
 }
@@ -51,12 +51,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    SHSongTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SongCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lyricCell" forIndexPath:indexPath];
     
-    SHSong *song = [self.songController.songs objectAtIndex:[indexPath row]];
+    Song *song = [self.songController.songs objectAtIndex:[indexPath row]];
     
-    cell.songTitleLabel.text = song.title;
-    cell.artistNameLabel.text = [song.artist uppercaseString];
+    cell.textLabel.text = song.title;
+    cell.detailTextLabel.text = [song.artist uppercaseString];
     
     return cell;
 }
@@ -65,14 +65,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"ViewSong"]) {
-        SHSongDetailsViewController *destinationVC = (SHSongDetailsViewController *)[segue destinationViewController];
+        SongViewController *destinationVC = (SongViewController *)[segue destinationViewController];
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        SHSong *song = [self.songController.songs objectAtIndex:[indexPath row]];
+        Song *song = [self.songController.songs objectAtIndex:[indexPath row]];
         [destinationVC setSong:song];
         [destinationVC setSongController:self.songController];
     } else if ([segue.identifier isEqualToString:@"AddSong"]) {
-        SHSongDetailsViewController *destinationVC = (SHSongDetailsViewController *)[segue destinationViewController];
+        SongViewController *destinationVC = (SongViewController *)[segue destinationViewController];
         
         [destinationVC setSongController:self.songController];
     }

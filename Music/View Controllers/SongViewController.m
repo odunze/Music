@@ -6,8 +6,8 @@
 //  Copyright © 2019 Lotanna Igwe-Odunze. All rights reserved.
 //
 
-#import "SHSongDetailsViewController.h"
-#import "SHSongController.h"
+#import "SongViewController.h"
+#import "SongController.h"
 
 @interface SongViewController ()
 
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation SHSongDetailsViewController
+@implementation SongViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -82,3 +82,5 @@
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
+
+@end

@@ -12,7 +12,7 @@
 
 - (instancetype)initFromDictionary:(NSDictionary *)dictionary songTitle:(NSString *)title artistName:(NSString *)artistName lyrics:(nonnull NSString *)lyrics rating:(NSInteger)rating
 {
-    return [[SHSong alloc] initWithTitle:title artist:artistName lyrics:lyrics rating:rating];
+    return [[Song alloc] initWithTitle:title artist:artistName lyrics:lyrics rating:rating];
 }
 
 - (instancetype)initFromPlistDictionary:(NSDictionary *)dictionary
@@ -22,7 +22,7 @@
     NSString *lyrics = dictionary[@"lyrics"];
     NSString *ratingString = dictionary[@"rating"];
     NSInteger rating = [ratingString integerValue];
-    return [[SHSong alloc] initWithTitle:title artist:artistName lyrics:lyrics rating:rating];
+    return [[Song alloc] initWithTitle:title artist:artistName lyrics:lyrics rating:rating];
 }
 
 - (NSDictionary *)songAsDictionary
